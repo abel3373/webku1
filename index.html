@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driftwood • Worn Wood • Eaten Wood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#home" class="logo">Driftwood • Worn Wood • Eaten Wood</a>
+      <div class="menu">
+        <a href="#karya">Karya</a>
+        <a href="#material">Material</a>
+        <a href="#proses">Proses</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+        <button onclick="scrollToSection('komisi')">Pesan Karya</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero container">
+    <div class="hero-text">
+      <h1>Miniatur kehidupan dari jejak alam waktu dan imajinasi</h1>
+      <p>
+        Seniman rupa yang bereksperimen dengan Driftwood Worn Wood dan Eaten Wood.
+        Mengubah material alami menjadi miniatur arsitektur motor klasik dan objek kehidupan.
+      </p>
+      <div class="hero-buttons">
+        <button onclick="scrollToSection('karya')">Lihat Karya</button>
+        <button class="outline" onclick="scrollToSection('komisi')">Pesan Karya</button>
+      </div>
+      <div class="badges">
+        <span>Arsitektur</span>
+        <span>Motor Klasik</span>
+        <span>Objek Kehidupan</span>
+      </div>
+    </div>
+    <div class="hero-images">
+      <div class="img-box">Miniatur arsitektur</div>
+      <div class="img-box">Miniatur motor klasik</div>
+      <div class="img-box wide">Objek kehidupan</div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="karya" class="container section">
+    <h2 class="section-title">Koleksi Karya</h2>
+    <p class="subtitle">Pilihan karya terbaru dalam berbagai kategori</p>
+    <div class="gallery">
+      <!-- contoh 9 karya -->
+      <div class="card">
+        <div class="img-box">Karya 1</div>
+        <p class="title">Karya #1</p>
+        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
+      </div>
+      <div class="card">
+        <div class="img-box">Karya 2</div>
+        <p class="title">Karya #2</p>
+        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
+      </div>
+      <div class="card">
+        <div class="img-box">Karya 3</div>
+        <p class="title">Karya #3</p>
+        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Material -->
+  <section id="material" class="container section">
+    <h2 class="section-title">Material Utama</h2>
+    <p class="subtitle">Tiga jejak alami dengan karakter berbeda</p>
+    <div class="grid">
+      <div class="card">🌊 Driftwood<br>Kayu yang terbawa arus laut...</div>
+      <div class="card">🔨 Worn Wood<br>Kayu aus oleh cuaca...</div>
+      <div class="card">🐛 Eaten Wood<br>Kayu berongga akibat serangga...</div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="container section">
+    <h2 class="section-title">Tentang Seniman</h2>
+    <p>
+      Seniman rupa yang bereksperimen dengan Driftwood Worn Wood dan Eaten Wood.
+      Mengubah material alami menjadi miniatur arsitektur motor klasik dan objek kehidupan.
+    </p>
+    <div class="img-box">Potret studio</div>
+  </section>
+
+  <!-- Komisi -->
+  <section id="komisi" class="container section">
+    <h2 class="section-title">Pesan Karya</h2>
+    <div class="grid">
+      <form class="form">
+        <input type="text" placeholder="Nama">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Kontak WhatsApp">
+        <input type="text" placeholder="Kategori karya">
+        <textarea placeholder="Deskripsi singkat ide Anda"></textarea>
+        <button type="submit">Kirim Permintaan</button>
+      </form>
+      <div>
+        <h3>Kisaran Ukuran</h3>
+        <p>Miniatur kecil: 10-20 cm</p>
+        <p>Miniatur menengah: 20-40 cm</p>
+        <p>Miniatur besar: >40 cm</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak">
+    <p>© <span id="year"></span> Nama Seniman. Semua hak cipta.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+          </html>

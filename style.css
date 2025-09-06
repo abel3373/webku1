@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  color: #333;
+  background: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a, .menu button {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button.outline {
+  background: transparent;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.badges span {
+  background: #eee;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  margin-right: 0.5rem;
+}
+
+.img-box {
+  background: #eee;
+  border-radius: 15px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box.wide {
+  grid-column: span 2;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f9f9f9;
+  margin-top: 2rem;
+}

@@ -1,13 +1,18 @@
-// Scroll ke section
-function scrollToSection(id) {
-  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-}
+// Navbar background change on scroll
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("bg-amber-900/90", "backdrop-blur");
+  } else {
+    navbar.classList.remove("bg-amber-900/90", "backdrop-blur");
+  }
+});
 
-// Tahun otomatis di footer
+// Footer tahun otomatis
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Form handler
-document.querySelector(".form").addEventListener("submit", (e) => {
+document.querySelector("form").addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("Permintaan berhasil dikirim! Kami akan menghubungi Anda segera.");
+  alert("Pesanan Anda berhasil dikirim!");
 });

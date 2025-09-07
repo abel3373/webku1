@@ -5,188 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Driftwood • Worn Wood • Eaten Wood</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4d3e6e9f4d.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="container nav-content">
-      <a href="#home" class="logo">Driftwood • Worn Wood • Eaten Wood</a>
+      <a href="#home" class="logo">🌿 Driftwood Art</a>
       <div class="menu">
         <a href="#karya">Karya</a>
         <a href="#material">Material</a>
-        <a href="#proses">Proses</a>
         <a href="#tentang">Tentang</a>
-        <a href="#kontak">Kontak</a>
-        <button onclick="scrollToSection('komisi')">Pesan Karya</button>
+        <a href="#komisi">Komisi</a>
+        <a href="#maps">Lokasi</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section id="home" class="hero container">
+  <section id="home" class="hero">
+    <div class="overlay"></div>
     <div class="hero-text">
-      <h1>Miniatur kehidupan dari jejak alam waktu dan imajinasi</h1>
-      <p>
-        Seniman rupa yang bereksperimen dengan Driftwood Worn Wood dan Eaten Wood.
-        Mengubah material alami menjadi miniatur arsitektur motor klasik dan objek kehidupan.
-      </p>
+      <h1>Miniatur Kehidupan dari Alam</h1>
+      <p>Mengubah kayu alami menjadi seni penuh makna: arsitektur, motor klasik, dan objek kehidupan.</p>
       <div class="hero-buttons">
         <button onclick="scrollToSection('karya')">Lihat Karya</button>
         <button class="outline" onclick="scrollToSection('komisi')">Pesan Karya</button>
       </div>
-      <div class="badges">
-        <span>Arsitektur</span>
-        <span>Motor Klasik</span>
-        <span>Objek Kehidupan</span>
-      </div>
-    </div>
-    <div class="hero-images">
-      <div class="img-box fade-in">Miniatur arsitektur</div>
-      <div class="img-box fade-in">Miniatur motor klasik</div>
-      <div class="img-box wide fade-in">Objek kehidupan</div>
     </div>
   </section>
 
-  <!-- Gallery -->
+  <!-- Karya -->
   <section id="karya" class="container section">
     <h2 class="section-title">Koleksi Karya</h2>
-    <p class="subtitle">Pilihan karya terbaru dalam berbagai kategori</p>
     <div class="gallery">
-      <!-- 9 karya -->
-      <div class="card fade-in">
-        <div class="img-box">Karya 1</div>
-        <p class="title">Karya #1</p>
-        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?wood,art" alt="Karya 1">
+        <p class="title">Miniatur Rumah Kayu</p>
+        <p class="desc">Terbuat dari driftwood asli pantai.</p>
       </div>
-      <div class="card fade-in">
-        <div class="img-box">Karya 2</div>
-        <p class="title">Karya #2</p>
-        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?motorcycle,vintage" alt="Karya 2">
+        <p class="title">Miniatur Motor Klasik</p>
+        <p class="desc">Kayu worn wood dipahat halus.</p>
       </div>
-      <div class="card fade-in">
-        <div class="img-box">Karya 3</div>
-        <p class="title">Karya #3</p>
-        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
-      </div>
-      <div class="card fade-in">
-        <div class="img-box">Karya 4</div>
-        <p class="title">Karya #4</p>
-        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
-      </div>
-      <div class="card fade-in">
-        <div class="img-box">Karya 5</div>
-        <p class="title">Karya #5</p>
-        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
-      </div>
-      <div class="card fade-in">
-        <div class="img-box">Karya 6</div>
-        <p class="title">Karya #6</p>
-        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
-      </div>
-      <div class="card fade-in">
-        <div class="img-box">Karya 7</div>
-        <p class="title">Karya #7</p>
-        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
-      </div>
-      <div class="card fade-in">
-        <div class="img-box">Karya 8</div>
-        <p class="title">Karya #8</p>
-        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
-      </div>
-      <div class="card fade-in">
-        <div class="img-box">Karya 9</div>
-        <p class="title">Karya #9</p>
-        <p class="desc">Driftwood • Worn Wood • Eaten Wood</p>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?nature,craft" alt="Karya 3">
+        <p class="title">Objek Kehidupan</p>
+        <p class="desc">Kayu eaten wood alami penuh karakter.</p>
       </div>
     </div>
   </section>
 
   <!-- Material -->
-  <section id="material" class="container section">
+  <section id="material" class="container section wood-bg">
     <h2 class="section-title">Material Utama</h2>
-    <p class="subtitle">Tiga jejak alami dengan karakter berbeda</p>
     <div class="grid">
-      <div class="card fade-in">🌊 <b>Driftwood</b><br>Kayu terbawa arus laut, menyimpan cerita perjalanan air.</div>
-      <div class="card fade-in">🔨 <b>Worn Wood</b><br>Kayu aus oleh cuaca dan waktu, bernuansa antik.</div>
-      <div class="card fade-in">🐛 <b>Eaten Wood</b><br>Kayu berongga akibat serangga, menciptakan pola unik.</div>
-    </div>
-  </section>
-
-  <!-- Proses -->
-  <section id="proses" class="container section">
-    <h2 class="section-title">Proses Kreatif</h2>
-    <p class="subtitle">Alam, waktu, dan imajinasi hadir sebagai satu kesatuan</p>
-    <div class="grid">
-      <div class="card fade-in">🌊 Alam<br>Material alami menjadi titik awal desain.</div>
-      <div class="card fade-in">📏 Waktu<br>Retakan & warna kayu merekam perjalanan panjang.</div>
-      <div class="card fade-in">✨ Imajinasi<br>Miniatur lahir dari tafsir artistik penuh karakter.</div>
+      <div class="material-box">
+        <i class="fas fa-water fa-2x"></i>
+        <h3>Driftwood</h3>
+        <p>Kayu yang terbawa arus laut, bentuknya unik dan alami.</p>
+      </div>
+      <div class="material-box">
+        <i class="fas fa-hammer fa-2x"></i>
+        <h3>Worn Wood</h3>
+        <p>Kayu yang aus oleh waktu dan cuaca, penuh cerita.</p>
+      </div>
+      <div class="material-box">
+        <i class="fas fa-bug fa-2x"></i>
+        <h3>Eaten Wood</h3>
+        <p>Kayu berongga bekas serangga, tekstur organik indah.</p>
+      </div>
     </div>
   </section>
 
   <!-- Tentang -->
   <section id="tentang" class="container section">
     <h2 class="section-title">Tentang Seniman</h2>
-    <div class="grid two-cols">
-      <div>
-        <p>
-          Seniman rupa yang bereksperimen dengan Driftwood Worn Wood dan Eaten Wood.
-          Mengubah material alami menjadi miniatur arsitektur motor klasik dan objek kehidupan.
-        </p>
-        <p class="mt">
-          Fokus pada detail struktur kecil agar cerita kayu tetap menonjol.
-          Karya lahir dari disiplin pertukangan dan kepekaan visual.
-        </p>
-      </div>
-      <div class="img-box fade-in">Potret studio & meja kerja</div>
+    <div class="about">
+      <img src="https://source.unsplash.com/400x400/?artist,studio" alt="Seniman">
+      <p>
+        Seniman rupa yang bereksperimen dengan Driftwood, Worn Wood, dan Eaten Wood.
+        Menghidupkan kembali kayu alam menjadi karya seni unik, menggambarkan harmoni
+        antara waktu, alam, dan imajinasi manusia.
+      </p>
     </div>
   </section>
 
   <!-- Komisi -->
   <section id="komisi" class="container section">
     <h2 class="section-title">Pesan Karya</h2>
-    <p class="subtitle">Sampaikan ide ukuran dan material yang diinginkan</p>
-    <div class="grid two-cols">
-      <form class="form card fade-in">
+    <div class="grid">
+      <form class="form">
         <input type="text" placeholder="Nama" required>
         <input type="email" placeholder="Email" required>
         <input type="text" placeholder="Kontak WhatsApp" required>
-        <input type="text" placeholder="Kategori karya">
-        <textarea placeholder="Deskripsi singkat ide Anda"></textarea>
+        <textarea placeholder="Deskripsi ide Anda" required></textarea>
         <button type="submit">Kirim Permintaan</button>
-        <p class="note">Formulir contoh. Hubungi langsung melalui kontak yang tersedia.</p>
       </form>
-      <div class="card fade-in">
-        <h3>Kisaran Waktu dan Ukuran</h3>
-        <p>Miniatur kecil (10–20 cm): objek tunggal.</p>
-        <p>Miniatur menengah (20–40 cm): detail arsitektur.</p>
-        <p>Miniatur besar (>40 cm): pesanan khusus.</p>
-        <h3>Kontak Cepat</h3>
-        <p><i data-lucide="phone"></i> +62 000 0000 000</p>
-        <p><i data-lucide="mail"></i> email@contoh.com</p>
-        <p><i data-lucide="instagram"></i> @instagram</p>
-        <p><i data-lucide="facebook"></i> Facebook</p>
+      <div class="size-info">
+        <h3>Kisaran Ukuran</h3>
+        <ul>
+          <li>Miniatur kecil: 10-20 cm</li>
+          <li>Miniatur menengah: 20-40 cm</li>
+          <li>Miniatur besar: >40 cm</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer id="kontak">
-    <div class="container footer-content">
-      <div>
-        <p class="footer-title">Driftwood Worn Wood Eaten Wood</p>
-        <p class="footer-sub">Miniatur kehidupan dari jejak alam waktu dan imajinasi.</p>
-      </div>
-      <div class="socials">
-        <a href="#"><i data-lucide="instagram"></i></a>
-        <a href="#"><i data-lucide="facebook"></i></a>
-        <a href="mailto:email@contoh.com"><i data-lucide="mail"></i></a>
-      </div>
+  <!-- Maps -->
+  <section id="maps" class="section">
+    <h2 class="section-title">Lokasi Studio</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.937648484283!2d110.3695!3d-7.8014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5789b9e7d7c1%3A0x123456789abcdef!2sYogyakarta!5e0!3m2!1sid!2sid!4v1690000000000!5m2!1sid!2sid" 
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
     </div>
-    <p class="copyright">© <span id="year"></span> Nama Seniman. Semua hak cipta.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> Driftwood Art | Dibuat dengan cinta pada alam 🌱</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-  </html>
+</html>

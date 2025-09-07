@@ -3,134 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Driftwood • Worn Wood • Eaten Wood</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Driftwood • Wood Art</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://kit.fontawesome.com/4d3e6e9f4d.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-amber-50 text-gray-800 font-sans">
+
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container nav-content">
-      <a href="#home" class="logo">🌿 Driftwood Art</a>
-      <div class="menu">
-        <a href="#karya">Karya</a>
-        <a href="#material">Material</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#komisi">Komisi</a>
-        <a href="#maps">Lokasi</a>
+  <nav id="navbar" class="fixed w-full z-50 bg-transparent transition duration-300">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center py-4">
+      <a href="#home" class="text-2xl font-bold text-white">🌿 Driftwood</a>
+      <div class="hidden md:flex space-x-6 text-white font-medium">
+        <a href="#karya" class="hover:text-amber-200">Karya</a>
+        <a href="#material" class="hover:text-amber-200">Material</a>
+        <a href="#tentang" class="hover:text-amber-200">Tentang</a>
+        <a href="#komisi" class="hover:text-amber-200">Komisi</a>
+        <a href="#lokasi" class="hover:text-amber-200">Lokasi</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="overlay"></div>
-    <div class="hero-text">
-      <h1>Miniatur Kehidupan dari Alam</h1>
-      <p>Mengubah kayu alami menjadi seni penuh makna: arsitektur, motor klasik, dan objek kehidupan.</p>
-      <div class="hero-buttons">
-        <button onclick="scrollToSection('karya')">Lihat Karya</button>
-        <button class="outline" onclick="scrollToSection('komisi')">Pesan Karya</button>
+  <!-- Hero Section -->
+  <header id="home" class="relative h-screen flex items-center justify-center">
+    <img src="assets/images/forest-bg.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Background Hutan">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative text-center text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Seni Kayu dari Alam</h1>
+      <p class="mb-6 text-lg md:text-xl">Menghidupkan kembali kayu hanyut, aus, dan berongga menjadi karya bernilai.</p>
+      <a href="#karya" class="bg-amber-700 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-medium shadow-lg">Lihat Koleksi</a>
+    </div>
+  </header>
+
+  <!-- Karya Section -->
+  <section id="karya" class="py-16 bg-amber-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-amber-800">Koleksi Karya</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <img src="assets/images/kayu1.jpg" alt="Karya 1" class="rounded-xl shadow-lg hover:scale-105 transition">
+        <img src="assets/images/kayu2.jpg" alt="Karya 2" class="rounded-xl shadow-lg hover:scale-105 transition">
+        <img src="assets/images/kayu3.jpg" alt="Karya 3" class="rounded-xl shadow-lg hover:scale-105 transition">
       </div>
     </div>
   </section>
 
-  <!-- Karya -->
-  <section id="karya" class="container section">
-    <h2 class="section-title">Koleksi Karya</h2>
-    <div class="gallery">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?wood,art" alt="Karya 1">
-        <p class="title">Miniatur Rumah Kayu</p>
-        <p class="desc">Terbuat dari driftwood asli pantai.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?motorcycle,vintage" alt="Karya 2">
-        <p class="title">Miniatur Motor Klasik</p>
-        <p class="desc">Kayu worn wood dipahat halus.</p>
-      </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x300/?nature,craft" alt="Karya 3">
-        <p class="title">Objek Kehidupan</p>
-        <p class="desc">Kayu eaten wood alami penuh karakter.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Material -->
-  <section id="material" class="container section wood-bg">
-    <h2 class="section-title">Material Utama</h2>
-    <div class="grid">
-      <div class="material-box">
-        <i class="fas fa-water fa-2x"></i>
-        <h3>Driftwood</h3>
-        <p>Kayu yang terbawa arus laut, bentuknya unik dan alami.</p>
-      </div>
-      <div class="material-box">
-        <i class="fas fa-hammer fa-2x"></i>
-        <h3>Worn Wood</h3>
-        <p>Kayu yang aus oleh waktu dan cuaca, penuh cerita.</p>
-      </div>
-      <div class="material-box">
-        <i class="fas fa-bug fa-2x"></i>
-        <h3>Eaten Wood</h3>
-        <p>Kayu berongga bekas serangga, tekstur organik indah.</p>
+  <!-- Material Section -->
+  <section id="material" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-amber-800">Material Utama</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-amber-100 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-water text-amber-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Driftwood</h3>
+          <p>Kayu yang terbawa arus laut dengan bentuk alami yang unik.</p>
+        </div>
+        <div class="bg-amber-100 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-tree text-amber-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Worn Wood</h3>
+          <p>Kayu aus dimakan waktu, meninggalkan tekstur klasik.</p>
+        </div>
+        <div class="bg-amber-100 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <i class="fas fa-bug text-amber-700 text-3xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Eaten Wood</h3>
+          <p>Kayu berongga karena serangga, menghadirkan estetika organik.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Tentang -->
-  <section id="tentang" class="container section">
-    <h2 class="section-title">Tentang Seniman</h2>
-    <div class="about">
-      <img src="https://source.unsplash.com/400x400/?artist,studio" alt="Seniman">
-      <p>
-        Seniman rupa yang bereksperimen dengan Driftwood, Worn Wood, dan Eaten Wood.
-        Menghidupkan kembali kayu alam menjadi karya seni unik, menggambarkan harmoni
-        antara waktu, alam, dan imajinasi manusia.
-      </p>
+  <!-- Tentang Section -->
+  <section id="tentang" class="py-16 bg-amber-50">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+      <img src="assets/images/seniman.jpg" alt="Seniman" class="w-80 rounded-xl shadow-lg">
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-amber-800">Tentang Seniman</h2>
+        <p class="text-lg">Seorang seniman yang memanfaatkan kayu hanyut, aus, dan berongga untuk menciptakan miniatur arsitektur, motor klasik, dan objek kehidupan. Karya ini menggambarkan perjalanan waktu dan harmoni dengan alam.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Komisi -->
-  <section id="komisi" class="container section">
-    <h2 class="section-title">Pesan Karya</h2>
-    <div class="grid">
-      <form class="form">
-        <input type="text" placeholder="Nama" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Kontak WhatsApp" required>
-        <textarea placeholder="Deskripsi ide Anda" required></textarea>
-        <button type="submit">Kirim Permintaan</button>
+  <!-- Komisi Section -->
+  <section id="komisi" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-10 text-amber-800">Pesan Karya</h2>
+      <form class="grid md:grid-cols-2 gap-6 text-left bg-amber-50 p-8 rounded-xl shadow-lg">
+        <input type="text" placeholder="Nama" class="p-3 rounded-md border border-gray-300">
+        <input type="email" placeholder="Email" class="p-3 rounded-md border border-gray-300">
+        <input type="text" placeholder="Nomor WhatsApp" class="p-3 rounded-md border border-gray-300 md:col-span-2">
+        <textarea placeholder="Deskripsi ide Anda" class="p-3 rounded-md border border-gray-300 md:col-span-2"></textarea>
+        <button type="submit" class="bg-amber-700 hover:bg-amber-600 text-white px-6 py-3 rounded-full font-medium shadow-md md:col-span-2">Kirim</button>
       </form>
-      <div class="size-info">
-        <h3>Kisaran Ukuran</h3>
-        <ul>
-          <li>Miniatur kecil: 10-20 cm</li>
-          <li>Miniatur menengah: 20-40 cm</li>
-          <li>Miniatur besar: >40 cm</li>
-        </ul>
-      </div>
     </div>
   </section>
 
-  <!-- Maps -->
-  <section id="maps" class="section">
-    <h2 class="section-title">Lokasi Studio</h2>
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.937648484283!2d110.3695!3d-7.8014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5789b9e7d7c1%3A0x123456789abcdef!2sYogyakarta!5e0!3m2!1sid!2sid!4v1690000000000!5m2!1sid!2sid" 
-        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
+  <!-- Lokasi Section -->
+  <section id="lokasi" class="py-16 bg-amber-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-amber-800">Lokasi Studio</h2>
+      <div class="rounded-xl overflow-hidden shadow-lg">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.937648484283!2d110.3695!3d-7.8014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5789b9e7d7c1%3A0x123456789abcdef!2sYogyakarta!5e0!3m2!1sid!2sid!4v1690000000000!5m2!1sid!2sid" width="100%" height="400" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>© <span id="year"></span> Driftwood Art | Dibuat dengan cinta pada alam 🌱</p>
+  <footer class="bg-amber-900 text-white py-6 text-center">
+    <p>© <span id="year"></span> Driftwood Art | Harmoni dengan Alam 🌱</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

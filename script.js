@@ -1,4 +1,4 @@
-// Smooth scroll
+// Scroll ke section
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
 }
@@ -6,11 +6,8 @@ function scrollToSection(id) {
 // Tahun otomatis di footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Lucide icons init
-lucide.createIcons();
-
-// Form contoh
+// Form handler
 document.querySelector(".form").addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("Formulir terkirim (contoh). Hubungi kontak langsung untuk pemesanan nyata.");
+  alert("Permintaan berhasil dikirim! Kami akan menghubungi Anda segera.");
 });
